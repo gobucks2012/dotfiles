@@ -40,3 +40,12 @@ filetype plugin on
 " Check installation
 NeoBundleCheck
 
+" Switch from the insert mode to the normal mode 
+inoremap <silent> jj <ESC>
+
+set number
+set cursorline
+
+" Highlight search results and switch them off with <ESC><ESC> 
+set hlsearch
+nnoremap <ESC><ESC> :nohlsearch<CR>
